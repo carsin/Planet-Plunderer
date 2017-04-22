@@ -11,4 +11,5 @@ var player = {
 	updateMoney: function() {
 		$("#money-count").html(player.money);
 	},
+
 }

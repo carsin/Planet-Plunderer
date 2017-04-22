@@ -15,7 +15,11 @@ body, html {
 	flex-direction: column;
 }
 
-/* Nav Bar */
+.highlight-color {
+	color: #1c8fcc;
+}
+
+/* Nav bar header */
 
 nav {
 	display: inline-block;
@@ -37,7 +41,7 @@ nav .current {
 	display: inline;
 }
 
-/* Main View */
+/* Main view */
 
 #main-view {
 	height: 100%;
@@ -57,6 +61,30 @@ nav .current {
 	padding: 0;
 }
 
-#main-view #money-header #money-count {
-	color: #1c8fcc;
+/* Main view element list */
+
+#main-view #elements {
+	align-self: left;
+	text-align: center;
+	width: 25%;
+	height: 100%;
+	border-top: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
+
+#main-view #elements h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#main-view #elements ul {
+	margin: 0;
+	padding: 0;
+}
+
+#main-view #element-list li {
+	list-style: none;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
 }

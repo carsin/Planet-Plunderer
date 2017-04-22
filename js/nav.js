@@ -1,10 +1,12 @@
 var mainViewButton = $("#main-view-button");
 var planetViewButton = $("#planet-view-button");
 var researchViewButton = $("#research-view-button");
+var productViewButton = $("#product-view-button");
 
 var mainView = $("#main-view");
 var planetView = $("#planet-view");
 var researchView = $("#research-view");
+var productView = $("#product-view");
 
 mainViewButton.click(function() {
 	if (!mainViewButton.hasClass("current")) {
@@ -16,6 +18,9 @@ mainViewButton.click(function() {
 		} else if (researchViewButton.hasClass("current")) {
 			researchViewButton.removeClass("current");
 			researchView.css("display", "none");
+		} else if (productViewButton.hasClass("current")) {
+			productViewButton.removeClass("current");
+			productView.css("display", "none");
 		}
 	}
 });
@@ -30,12 +35,14 @@ planetViewButton.click(function() {
 		} else if (researchViewButton.hasClass("current")) {
 			researchViewButton.removeClass("current");
 			researchView.css("display", "none");
+		} else if (productViewButton.hasClass("current")) {
+			productViewButton.removeClass("current");
+			productView.css("display", "none");
 		}
 	}
 });
 
 researchViewButton.click(function() {
-	console.log("click");
 	if (!researchViewButton.hasClass("current")) {
 		researchViewButton.addClass("current");
 		researchView.css("display", "inline");
@@ -45,6 +52,26 @@ researchViewButton.click(function() {
 		} else if (planetViewButton.hasClass("current")) {
 			planetViewButton.removeClass("current");
 			planetView.css("display", "none");
+		} else if (productViewButton.hasClass("current")) {
+			productViewButton.removeClass("current");
+			productView.css("display", "none");
+		}
+	}
+});
+
+productViewButton.click(function() {
+	if (!productViewButton.hasClass("current")) {
+		productViewButton.addClass("current");
+		productView.css("display", "inline");
+		if (mainViewButton.hasClass("current")) {
+			mainViewButton.removeClass("current");
+			mainView.css("display", "none");
+		} else if (planetViewButton.hasClass("current")) {
+			planetViewButton.removeClass("current");
+			planetView.css("display", "none");
+		} else if (researchViewButton.hasClass("current")) {
+			researchViewButton.removeClass("current");
+			researchView.css("display", "none");
 		}
 	}
 });
