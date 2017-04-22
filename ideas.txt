@@ -1,0 +1,21 @@
+Theme: A Small World
+	- Closed world base builder/ Kinda like minecraft but small
+	- Tycoon / buisness game with very small planets
+		- Have to travel to different planets to extract their resources
+		- Create things out of different resources to sell
+		- Deploy factories to planets
+		- Planets deplete resources quickly
+		- Science element
+			- Have to dedicate time to researching new resources, more efficient resource extraction, discover new ways to find planets
+			- Resources become obsolete after the "market" thinks their obsolete
+		GRAPHICS: 
+			- Text based
+				- Buttons, text kinda like a dark room
+				- Some graphical elements
+					- Planets, elements.
+		- Can it be finished?
+	- Mini planet simulator?
+		- Something to do with aliens
+	- Trading game
+		- Travel to different small planets and trade
+	

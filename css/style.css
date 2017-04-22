@@ -1,0 +1,80 @@
+/* Global */
+
+body {
+	border: 1px solid #808080;
+	overflow: hidden;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font: 15px / 1.5 "Roboto", "Arial", sans-serif;
+	display: flex;
+}
+
+/* Main View */
+
+#main-view {
+	align-self: left;
+	height: 100%;
+	width: 70%;
+	border: 1px solid #808080;
+	background-color: #dcdcdc;
+}
+
+#main-view #player-name {
+	text-align: center;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+#main-view #money-header {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#main-view #money-header #money-count {
+	color: #168816;
+}
+
+/* Side column */
+
+#side-view {
+	flex-direction: column;
+	width: 30%;
+}
+
+.column {
+	height: 50%;
+	width: 100%;
+}
+
+/* Research view */
+
+#research-view {
+	border: 1px solid #808080;
+	background-color: #dcdcdc;
+}
+
+#research-view h2 {
+	text-align: center;
+}
+
+/* Planet view */
+
+#planet-view {
+	border: 1px solid #808080;
+	background-color: #dcdcdc;
+	text-align: center;
+}
+
+#planet-view h2 {
+	margin: 5px 0 5px 0;
+}
+
+#planet-view canvas {
+	background-color: black;
+}
