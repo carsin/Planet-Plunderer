@@ -10,23 +10,28 @@
 	<title>Think of game names</title>
 </head>
 <body>
-	<div id="main-view">
+
+	<nav>
+		<button id="main-view-button" class="current">Home</button>
+		<button id="planet-view-button">Planets</button>
+		<button id="research-view-button">Research</button>
+	</nav>
+
+	<div id="main-view" style="display: inline">
 		<h2 id="player-name">Name here!</h2>
-		<h2 id="money-header"><span id="money-count">Money here!</span> &#8225;'s (Teks)</h2>
+		<h2 id="money-header"><span id="money-count">Money here!</span> Teks</h2>
 	</div>
 
-	<div id="side-view">
-		<div id="research-view" class="column">
-			<h2>Research</h2>
-		</div>
+	<div id="planet-view" style="display: none">
+		<h2>Planets</h2>
+	</div>
 
-		<div id="planet-view" class="column">
-			<h2>Planets</h2>
-			<canvas id="planet-canvas">Your browser doesn't support canvas :(</canvas>
-		</div>
+	<div id="research-view" style="display: none">
+		<h2>Research</h2>
 	</div>
 
 	<script src="js/player.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/nav.js"></script>
 </body>
 </html>

@@ -12,15 +12,36 @@ body, html {
 	padding: 0;
 	font: 15px / 1.5 "Roboto", "Arial", sans-serif;
 	display: flex;
+	flex-direction: column;
+}
+
+/* Nav Bar */
+
+nav {
+	display: inline-block;
+	text-align: center;
+	background-color: #dcdcdc;
+}
+
+nav button {
+	border: none;
+	background-color: #a9a9a9;
+	padding: 10px;
+	display: inline;
+}
+
+nav .current {
+	border: none;
+	background-color: #1c8fcc; 
+	padding: 10px;
+	display: inline;
 }
 
 /* Main View */
 
 #main-view {
-	align-self: left;
 	height: 100%;
-	width: 70%;
-	border: 1px solid #808080;
+	width: 100%;
 	background-color: #dcdcdc;
 }
 
@@ -37,44 +58,5 @@ body, html {
 }
 
 #main-view #money-header #money-count {
-	color: #168816;
-}
-
-/* Side column */
-
-#side-view {
-	flex-direction: column;
-	width: 30%;
-}
-
-.column {
-	height: 50%;
-	width: 100%;
-}
-
-/* Research view */
-
-#research-view {
-	border: 1px solid #808080;
-	background-color: #dcdcdc;
-}
-
-#research-view h2 {
-	text-align: center;
-}
-
-/* Planet view */
-
-#planet-view {
-	border: 1px solid #808080;
-	background-color: #dcdcdc;
-	text-align: center;
-}
-
-#planet-view h2 {
-	margin: 5px 0 5px 0;
-}
-
-#planet-view canvas {
-	background-color: black;
+	color: #1c8fcc;
 }
