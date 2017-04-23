@@ -9,11 +9,17 @@ body, html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font: 15px / 1.5 "Roboto", "Arial", sans-serif;
+	font: 17px "Share Tech Mono", "Oxygen Mono", monospace;
 }
 
 .highlight-color {
 	color: #1c8fcc;
+}
+
+button {
+	border: 1px solid #808080;
+	padding: 3px 10px 3px 10px;
+	border-radius: 2px;
 }
 
 #game-view {
@@ -60,14 +66,14 @@ header #player-name {
 
 #main-view {
 	height: 100%;
-	width: 80%;
+	width: 100%;
 	background-color: #f5f5f5;
 }
 
 /* Main view element list */
 
 #main-view #elements {
-	align-self: left;
+	float: left;
 	text-align: center;
 	width: 25%;
 	height: 100%;
@@ -91,9 +97,22 @@ header #player-name {
 	padding: 0;
 }
 
-#main-view #element-list .element-sell-button {
-	border: 1px solid #808080;
-	padding: 3px 10px 3px 10px;
+#main-view #element-list button {
+	margin-left: 10px;
+}
+
+/* Main view buildings */
+
+#main-view #buildings {
+	width: 100%;
+	height: 100%;
+	border-left: 2px solid #808080;
+}
+
+#main-view #buildings h2 {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 /* Planet view */
@@ -118,6 +137,16 @@ header #player-name {
 	padding: 0;
 }
 
+#planet-view #planet-details #planet-name {
+	text-align: center;
+}
+
+#planet-view #planet-details {
+	width: 74%;
+	height: 100%;
+	float: left;
+}
+
 /* Planet view planet list */
 
 #planet-view #planet-list ul {
@@ -132,11 +161,28 @@ header #player-name {
 	padding: 0;
 }
 
+#planet-view #planet-list li:hover {
+	cursor: pointer;
+	list-style: none;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
 /* Planet view planet info */
 
 #planet-view #planet-info {
 	float: left;
-	width: 74%;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+/* Planet view planet controls */
+
+#planet-view #planet-controls {
+	text-align: center;
+	width: 50%;
+	float: left;
 	height: 100%;
 }
 
@@ -144,10 +190,17 @@ header #player-name {
 
 #text-console {
 	width: 20%;
-	float: right;
+	float: left;
 	overflow: scroll;
+}
+
+#text-console #console-list {
+	padding: 0;
+	margin: 0;
 }
 
 #text-console ul li {
 	list-style: none;
+	margin: 5px 0 5px 7px;
+	padding: 0;
 }

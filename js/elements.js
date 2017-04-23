@@ -1,12 +1,14 @@
 var elements = [];
 var unlockedElements = [];
 
-function Element(id, name, worth, unlocked, count) {
+function Element(id, name, worth, unlocked, count, strength, rarity) {
 	this.id = id;
 	this.name = name;
 	this.worth = worth;
 	this.unlocked = unlocked;
 	this.count = count;
+	this.strength = strength;
+	this.rarity = rarity;
 	
 	this.init = function() {
 		elements.push(this);
@@ -36,7 +38,7 @@ function updateElementList() {
 
 	for (var i = 0; i < elementNumber; i++) {
 		if (elements[i].unlocked === true && elements[i].count > 0) {
-			str += "<li>" + elements[i].name + ": " + "<span class='highlight-color'>" + elements[i].count + "</span></li><button class='element-sell-button' id='" + elements[i].name.toLowerCase() +"-sell-button'>Sell 1</button>";
+			str += "<li>" + elements[i].name + ": " + "<span class='highlight-color'>" + elements[i].count + "</span><button class='element-sell-button' id='" + elements[i].name.toLowerCase() +"-sell-button'>Sell 1</button></li>";
 		}
 	}
 
@@ -51,7 +53,7 @@ function updateElementList() {
 				var element = elements[i];
 				player.money += element.worth;
 				element.count--;
-				gameConsole.log("You have sold 1 " + element.name + " for " + element.worth + " Teks");
+				gameConsole.log("Sold 1 " + element.name + " for " + element.worth + " Teks");
 				updateElementList();
 				player.updateMoney();
 				break;

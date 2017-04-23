@@ -3,22 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Planet Plunderer</title>
 </head>
 <body>
 	<header>
+		<h2 id="player-name">Name here!</h2>
+		<h2 id="money-header"><span class="highlight-color" id="money-count">Money here!</span> Teks</h2>
 		<nav>
 			<button id="main-view-button">Home</button>
 			<button id="planet-view-button" class="current">Planets</button>
 			<button id="research-view-button">Research</button>
 			<button id="product-view-button">Products</button>
 		</nav>
-			<h2 id="player-name">Name here!</h2>
-			<h2 id="money-header"><span class="highlight-color" id="money-count">Money here!</span> Teks</h2>
 	</header>
 	
 	<div id="game-view">
@@ -27,6 +28,9 @@
 				<h2>ELEMENTS</h2>
 				<div id="element-list"></div>
 			</div>
+			<div id="buildings">
+				<h2>BUILD</h2>
+			</div>
 		</div>
 
 		<div id="planet-view" style="display: inline">
@@ -34,9 +38,10 @@
 				<h2>PLANETS</h2>
 				<div id="planet-list"></div>
 			</div>
-			<div id="planet-info">
-				<h2 id="planet-name">Click a planet for more info to appear here!</h2>
-				<p>Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi hic alias vel eligendi labore pariatur asperiores. Ipsam nemo ipsa deserunt eum corrupti, reprehenderit commodi ad facilis non, expedita dolores vero!</p>
+			<div id="planet-details">
+				<h2 id="planet-name">Click a planet for more info!</h2>
+				<div id="planet-info"></div>
+				<div id="planet-controls"></div>
 			</div>
 		</div>
 
