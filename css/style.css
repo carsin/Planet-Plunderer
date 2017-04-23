@@ -1,7 +1,6 @@
 /* Global */
 
 body {
-	border: 1px solid #808080;
 	overflow: hidden;
 }
 
@@ -11,54 +10,58 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font: 15px / 1.5 "Roboto", "Arial", sans-serif;
-	display: flex;
-	flex-direction: column;
 }
 
 .highlight-color {
 	color: #1c8fcc;
 }
 
+#game-view {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
 /* Nav bar header */
 
-nav {
-	display: inline-block;
+header {
 	text-align: center;
 	background-color: #dcdcdc;
+	border-bottom: 2px solid #808080;
+	height: 12%;
 }
 
-nav button {
-	border: none;
+header nav button {
+	border: 1px solid #808080;
 	background-color: #a9a9a9;
 	padding: 10px;
-	display: inline;
 }
 
-nav .current {
-	border: none;
+header nav .current {
+	border: 1px solid #808080;
 	background-color: #1c8fcc; 
 	padding: 10px;
-	display: inline;
+}
+
+header #money-header {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+header #player-name {
+	text-align: center;
+	padding: 0;
+	margin: 0 0 5px 0;
 }
 
 /* Main view */
 
 #main-view {
 	height: 100%;
-	width: 100%;
-	background-color: #dcdcdc;
-}
-
-#main-view #player-name {
-	text-align: center;
-	padding: 0;
-	margin: 0 0 5px 0;
-}
-
-#main-view #money-header {
-	text-align: center;
-	margin: 0;
-	padding: 0;
+	width: 80%;
+	background-color: #f5f5f5;
 }
 
 /* Main view element list */
@@ -68,8 +71,7 @@ nav .current {
 	text-align: center;
 	width: 25%;
 	height: 100%;
-	border-top: 1px solid #808080;
-	border-right: 1px solid #808080;
+	border-right: 2px solid #808080;
 }
 
 #main-view #elements h2 {
@@ -87,4 +89,65 @@ nav .current {
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
+}
+
+#main-view #element-list .element-sell-button {
+	border: 1px solid #808080;
+	padding: 3px 10px 3px 10px;
+}
+
+/* Planet view */
+
+#planet-view {
+	background-color: #f5f5f5;
+	height: 100%;
+	width: 100%;
+	border-right: 2px solid #808080;
+}
+
+#planet-view #planet-list-container {
+	width: 25%;
+	float: left;
+	border-right: 2px solid #808080;
+	height: 100%;
+	text-align: center;
+}
+
+#planet-view h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Planet view planet list */
+
+#planet-view #planet-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+#planet-view #planet-list li {
+	list-style: none;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Planet view planet info */
+
+#planet-view #planet-info {
+	float: left;
+	width: 74%;
+	height: 100%;
+}
+
+/* Console */
+
+#text-console {
+	width: 20%;
+	float: right;
+	overflow: scroll;
+}
+
+#text-console ul li {
+	list-style: none;
 }

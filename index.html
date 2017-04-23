@@ -10,38 +10,58 @@
 	<title>Planet Plunderer</title>
 </head>
 <body>
-
-	<nav>
-		<button id="main-view-button" class="current">Home</button>
-		<button id="planet-view-button">Planets</button>
-		<button id="research-view-button">Research</button>
-		<button id="product-view-button">Products</button>
-	</nav>
-
-	<div id="main-view" style="display: inline">
-		<h2 id="player-name">Name here!</h2>
-		<h2 id="money-header"><span class="highlight-color" id="money-count">Money here!</span> Teks</h2>
-		<div id="elements">
-			<h2>Elements:</h2>
-			<div id="element-list"></div>
+	<header>
+		<nav>
+			<button id="main-view-button">Home</button>
+			<button id="planet-view-button" class="current">Planets</button>
+			<button id="research-view-button">Research</button>
+			<button id="product-view-button">Products</button>
+		</nav>
+			<h2 id="player-name">Name here!</h2>
+			<h2 id="money-header"><span class="highlight-color" id="money-count">Money here!</span> Teks</h2>
+	</header>
+	
+	<div id="game-view">
+		<div id="main-view" style="display: none">
+			<div id="elements">
+				<h2>ELEMENTS</h2>
+				<div id="element-list"></div>
+			</div>
 		</div>
-	</div>
 
-	<div id="planet-view" style="display: none">
-		<h2>Planets</h2>
-	</div>
+		<div id="planet-view" style="display: inline">
+			<div id="planet-list-container">
+				<h2>PLANETS</h2>
+				<div id="planet-list"></div>
+			</div>
+			<div id="planet-info">
+				<h2 id="planet-name">Click a planet for more info to appear here!</h2>
+				<p>Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi hic alias vel eligendi labore pariatur asperiores. Ipsam nemo ipsa deserunt eum corrupti, reprehenderit commodi ad facilis non, expedita dolores vero!</p>
+			</div>
+		</div>
 
-	<div id="research-view" style="display: none">
-		<h2>Research</h2>
-	</div>
+		<div id="research-view" style="display: none">
+			<h2>Research</h2>
+		</div>
 
-	<div id="product-view" style="display: none">
-		<h2>Products</h2>
+		<div id="product-view" style="display: none">
+			<h2>Products</h2>
+		</div>
+
+		<div id="text-console">
+			<ul id="console-list">
+				<li>Hi there!</li>
+				<li>I'm the console!</li>
+				<li>This text will dissapear as soon as something of importance pops up :)</li>
+			</ul>
+		</div>
 	</div>
 
 	<script src="js/player.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/elements.js"></script>
+	<script src="js/planets.js"></script>
+	<script src="js/gameconsole.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
