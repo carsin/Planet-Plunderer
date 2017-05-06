@@ -12,8 +12,10 @@
 </head>
 <body>
 	<header>
-		<h2 id="player-name">Name here!</h2>
-		<h2 id="money-header"><span class="highlight-color" id="money-count">Money here!</span> Teks</h2>
+		<div id="info">
+			<h4>V0.06   <a href="https://github.com/razey"><img src="assets/image/github.png" width="40" height="40" alt="GitHub"></a></h4>
+		</div>
+		<h2 id="player-info"><span id="player-name">Name here!</span> has: $<span class="highlight-color" id="money-count">Money here!</span></h2>
 		<nav>
 			<button id="main-view-button">Home</button>
 			<button id="planet-view-button" class="current">Planets</button>
@@ -28,8 +30,8 @@
 				<h2>ELEMENTS</h2>
 				<div id="element-list"></div>
 			</div>
-			<div id="buildings">
-				<h2>BUILD</h2>
+			<div id="purchase">
+				<h2>purchase</h2>
 			</div>
 		</div>
 
@@ -61,7 +63,7 @@
 			</ul>
 		</div>
 	</div>
-
+	
 	<script src="js/player.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/elements.js"></script>

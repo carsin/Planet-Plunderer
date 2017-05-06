@@ -1,10 +1,12 @@
 var consoleElement = $("#console-list");
+var notificationSound = new Audio("./assets/sound/pop.mp3");
 
 var gameConsole = {
 	text: [],
 	log: function(text) {
 		var text = text;
 		gameConsole.text.unshift("[" + getTime() + "] " + text);
+		notificationSound.play();
 		gameConsole.update();
 	},
 	

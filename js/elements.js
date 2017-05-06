@@ -9,22 +9,21 @@ function Element(id, name, worth, unlocked, count, strength, rarity) {
 	this.count = count;
 	this.strength = strength;
 	this.rarity = rarity;
-	
+
 	this.init = function() {
 		elements.push(this);
-	}
+	};
 
 	this.unlock = function() {
 		this.unlocked = true;
 		unlockedElements.push(this);
-	}
+	};
 
 	if (this.unlocked === true) {
 		this.unlock();
 	}
 
 	this.init();
-
 }
 
 function updateElementList() {
