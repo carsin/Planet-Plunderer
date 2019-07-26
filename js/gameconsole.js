@@ -6,7 +6,7 @@ var gameConsole = {
 	log: function(text) {
 		var text = text;
 		gameConsole.text.unshift("[" + getTime() + "] " + text);
-		notificationSound.play();
+		// notificationSound.play();
 		gameConsole.update();
 	},
 	
